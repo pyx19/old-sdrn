@@ -561,11 +561,11 @@ if __name__ == '__main__':
     # parser.add_argument('--bert_json_dir', type=str,
     #                     default="/home/ramon/chenshaowei_summer/IJCAI2020_Rebuttal/bert-base-uncased/bert_config.json")
     parser.add_argument('--bert_json_dir', type=str,
-                        default="/home/daddyshome/lightsout/SDRN/bert_config.json")
+                        default="./bert_config.json")
     # parser.add_argument('--bert_checkpoint_dir', type=str,
     #                     default="/home/ramon/chenshaowei_summer/IJCAI2020_Rebuttal/bert-base-uncased/pytorch_model.bin")
     parser.add_argument('--bert_checkpoint_dir', type=str,
-                        default="/home/daddyshome/lightsout/SDRN/pytorch_model.bin")
+                        default="./pytorch_model.bin")
     parser.add_argument('--tagScheme', type=str, default="BIO")
     parser.add_argument('--ifgpu', type=bool, default=True)
 
