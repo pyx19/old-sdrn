@@ -549,15 +549,15 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--mode', type=str, default="test", choices=["train", "test"])
-    parser.add_argument('--data', type=str, default="/kaggle/input/sdrn-dataset/SDRN/data/2014Res.pt")
+    parser.add_argument('--data', type=str, default="/kaggle/input/sdrn-dataset/SDRN/data/2015Res.pt")
 
     # ## if test
     parser.add_argument('--test_model', type=str, default="./model/2014Res/modelFinal.model")
     parser.add_argument('--test_eval_dir', type=str, default="./test_eval/2014Res")
 
     ## if train
-    parser.add_argument('--model_dir', type=str, default="./model/2014Res")
-    parser.add_argument('--eval_dir', type=str, default="./eval/2014Res")
+    parser.add_argument('--model_dir', type=str, default="./model/2015Res")
+    parser.add_argument('--eval_dir', type=str, default="./eval/2015Res")
     # parser.add_argument('--bert_json_dir', type=str,
     #                     default="/home/ramon/chenshaowei_summer/IJCAI2020_Rebuttal/bert-base-uncased/bert_config.json")
     parser.add_argument('--bert_json_dir', type=str,
