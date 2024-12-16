@@ -549,10 +549,10 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--mode', type=str, default="test", choices=["train", "test"])
-    parser.add_argument('--data', type=str, default="/kaggle/input/sdrn-dataset/new-sdrn/data/2014Lap.pt")
+    parser.add_argument('--data', type=str, default="/kaggle/input/sdrn-dataset/new-sdrn/data/2015Res.pt")
 
     # ## if test
-    parser.add_argument('--test_model', type=str, default="/kaggle/input/sdrn-dataset/new-sdrn/model/2014Lap2/modelFinal.model")
+    parser.add_argument('--test_model', type=str, default="./model/2014Res/modelFinal.model")
     parser.add_argument('--test_eval_dir', type=str, default="./test_eval/2014Res")
 
     ## if train
