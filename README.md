@@ -21,4 +21,3 @@ https://github.com/google-research/bert
 Link Kaggle:
 https://www.kaggle.com/code/iamnotfuc/sdrn-train
 ```
-# new-sdrn
