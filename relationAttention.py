@@ -19,10 +19,10 @@ class RelationAttention(nn.Module):
         self.b = nn.Parameter(torch.Tensor(1, 1, 1, self.relation_attention_dim))
         self.v = nn.Parameter(torch.Tensor(1, self.relation_attention_dim))
 
-        init.xavier_uniform(self.w_ta)
-        init.xavier_uniform(self.w_ja)
-        init.xavier_uniform(self.b)
-        init.xavier_uniform(self.v)
+        init.xavier_uniform_(self.w_ta)
+        init.xavier_uniform_(self.w_ja)
+        init.xavier_uniform_(self.b)
+        init.xavier_uniform_(self.v)
 
         self.softmax = nn.Softmax(dim=2)
 
