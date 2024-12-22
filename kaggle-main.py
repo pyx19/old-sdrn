@@ -394,7 +394,7 @@ def main(args):
     model = opinionMining(args, bert_config, label_alphabet)
     if args.mode == "test":
         assert args.test_model != ""
-        model = torch.load(args.test_model, weights_only=True)
+        model = torch.load(args.test_model)
         test_start = time.time()
         # evaluate
         RP, RR, RF, TP, TR, TF, OP, OR, OF = evaluate(
