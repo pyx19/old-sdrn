@@ -34,16 +34,16 @@ class opinionMining(nn.Module):
         # relation syn
         self.relationSyn_u = nn.Parameter(torch.Tensor(self.relation_hidden_dim, self.bert_encoder_dim))
         self.relationSyn_s = nn.Parameter(torch.Tensor(self.relation_hidden_dim, self.bert_encoder_dim))
-        init.xavier_uniform(self.targetSyn_r)
-        init.xavier_uniform(self.targetSyn_s)
-        init.xavier_uniform(self.relationSyn_u)
-        init.xavier_uniform(self.relationSyn_s)
+        init.xavier_uniform_(self.targetSyn_r)
+        init.xavier_uniform_(self.targetSyn_s)
+        init.xavier_uniform_(self.relationSyn_u)
+        init.xavier_uniform_(self.relationSyn_s)
 
         # crf
         self.targetHidden2Tag = nn.Parameter(torch.Tensor(self.label_size + 2, self.target_hidden_dim))
         self.targetHidden2Tag_b = nn.Parameter(torch.Tensor(1, self.label_size + 2))
-        init.xavier_uniform(self.targetHidden2Tag)
-        init.xavier_uniform(self.targetHidden2Tag_b)
+        init.xavier_uniform_(self.targetHidden2Tag)
+        init.xavier_uniform_(self.targetHidden2Tag_b)
 
         self.crf = CRF(self.label_size, self.gpu)
 
