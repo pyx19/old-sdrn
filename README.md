@@ -3,9 +3,9 @@
 #### Requirement:
 
 ```
-  python==3.6.8
-  torch==0.4.0
-  numpy==1.15.4
+  python==3.10.14
+  torch==2.4.0
+  numpy==1.26.4
 ```
 
 #### Dataset:
